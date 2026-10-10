@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <title>Knit Rail — The Collection</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="hardware.js" defer></script>
+  <script src="motion.js" defer></script>
+  <script src="clothes.config.js" defer></script>
+  <script src="catalog.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="./" aria-label="Knit Rail 衣橱首页">Knit Rail</a>
+    <button class="collection-link" id="reset">The collection <span></span></button>
+    <span class="edition">EVERYDAY KNITWEAR</span>
+  </header>
+  <main>
+    <section class="showroom" id="showroom" aria-label="服饰挂衣杆，鼠标悬停展开单品">
+      <canvas id="hardware" aria-hidden="true"></canvas>
+      <div class="rack" id="rack"></div>
+    </section>
+    <section class="collection-bar" aria-label="单品预览">
+      <div class="current"><h1 id="current-name">The full collection</h1><p id="current-note">Hover to unfold. Click to discover.</p></div>
+      <div class="swatches" id="swatches" aria-label="选择预览单品"></div>
+      <span class="collection-count" id="index"></span>
+    </section>
+  </main>
+  <footer aria-hidden="true"><div class="ticker"><span>NEW DESIGNS DAILY <i>✦</i> THE EVERYDAY KNIT COLLECTION <i>✦</i> SOFT BY NATURE <i>✦</i> NEW DESIGNS DAILY <i>✦</i> THE EVERYDAY KNIT COLLECTION <i>✦</i> SOFT BY NATURE <i>✦</i></span><span>NEW DESIGNS DAILY <i>✦</i> THE EVERYDAY KNIT COLLECTION <i>✦</i> SOFT BY NATURE <i>✦</i> NEW DESIGNS DAILY <i>✦</i> THE EVERYDAY KNIT COLLECTION <i>✦</i> SOFT BY NATURE <i>✦</i></span></div></footer>
+<dialog id="detail" aria-labelledby="detail-title">
+    <button id="close-detail" class="close-detail" aria-label="关闭商品卡">×</button>
+    <div class="detail-photo"><img id="detail-image" alt="" draggable="false"><nav class="detail-navigation" aria-label="切换商品"><button id="prev-product" class="detail-nav-button" aria-label="上一件商品">←</button><span id="detail-count" aria-live="polite"></span><button id="next-product" class="detail-nav-button" aria-label="下一件商品">→</button></nav></div>
+    <div class="detail-copy"><p id="detail-english"></p><h2 id="detail-title"></h2><p class="price" id="detail-price"></p><p id="detail-note"></p><div class="product-color">颜色 <span id="detail-color"></span></div><div class="sizes" aria-label="选择尺码"><button class="size-option" aria-pressed="false">S</button><button class="size-option" aria-pressed="true">M</button><button class="size-option" aria-pressed="false">L</button><button class="size-option" aria-pressed="false">XL</button></div><p class="material">柔软针织 · 自然垂坠 · 日常系列</p></div>
+  </dialog>
+</body>
+</html>
