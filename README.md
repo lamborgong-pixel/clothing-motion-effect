@@ -10,8 +10,6 @@
 
 ![Knit Rail 服饰挂杆交互演示](assets/demo/preview-hover-operation.gif)
 
-需要查看高清效果，可[下载完整 MP4 视频](https://github.com/lamborgong-pixel/clothing-motion-effect/raw/refs/heads/main/assets/demo/preview-hover-operation.mp4)，使用本地播放器观看。
-
 ## 快速开始
 
 在项目根目录运行：
