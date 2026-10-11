@@ -6,11 +6,11 @@
 
 ## 效果演示
 
-点击下方封面观看悬停交互演示，查看服饰转向、挂杆滑动与惯性摆动效果。
+下方动图直接展示悬停交互，可查看服饰转向、挂杆滑动与惯性摆动效果，无需跳转。
 
-[![Knit Rail 服饰挂杆交互演示](assets/demo/preview-hover-operation-poster.jpg)](assets/demo/preview-hover-operation.mp4)
+![Knit Rail 服饰挂杆交互演示](assets/demo/preview-hover-operation.gif)
 
-[▶ 观看演示视频](assets/demo/preview-hover-operation.mp4)
+需要查看高清效果，可[下载完整 MP4 视频](https://github.com/lamborgong-pixel/clothing-motion-effect/raw/refs/heads/main/assets/demo/preview-hover-operation.mp4)，使用本地播放器观看。
 
 ## 快速开始
 
@@ -68,7 +68,7 @@ python3 -m http.server 8000
 node tests/catalog.test.cjs
 ```
 
-检查单品配置、图片测量与服饰间距。正式演示视频与封面保存在 `assets/demo/`；其余本地预览、录像、系统文件与缓存由 `.gitignore` 排除。
+检查单品配置、图片测量与服饰间距。正式演示动图、视频与封面保存在 `assets/demo/`；其余本地预览、录像、系统文件与缓存由 `.gitignore` 排除。
 
 ## 赞赏与联系
 
